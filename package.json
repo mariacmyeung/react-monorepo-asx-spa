@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:radix": "yarn workspace asx-announcements dev",
+    "dev:asx": "yarn workspace asx-spa dev",
+    "dev:form": "yarn workspace multi-form-spa dev",
+    "build": "yarn workspaces foreach --all run build"
+  }
+}
